@@ -15,7 +15,7 @@ export default function Quotes() {
         .catch(function (error) {
           console.log(error);
         });
-    }, 6000);
+    }, 1000);
   }, []);
 
   return (
