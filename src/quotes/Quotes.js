@@ -3,7 +3,9 @@ import { useEffect, useState } from "react";
 
 export default function Quotes() {
   const [word, setWord] = useState([]);
-  const [meaning, setMeaning] = useState([])
+  const [meaning, setMeaning] = useState([]);
+  const [phonetics, setPhonetics] = useState([])
+
  
 
   useEffect(() => {
@@ -24,9 +26,7 @@ export default function Quotes() {
     .then(
       function(response){
         setMeaning(response.data[0].meanings[0].definitions[0].definition)
-        if (response.data[0].length >= 2){
-          console.log('more than 2')
-        }
+        setPhonetics(response.data[0].phonetic)
         console.log(response.data)
 
       }
@@ -42,9 +42,9 @@ export default function Quotes() {
   return (
     <div className="quote-card">
       <p className="quote-heading">Word for you</p>
-      <p className="text-3">{word[0]} </p>
+      <p className="text-3">{word[0]} <span>{phonetics}</span> </p>
       <p className="quote-content">
-       {meaning}
+       {meaning} 
       </p>
       <p className="quote-by">~ Evelyn Waugh</p>
     </div>

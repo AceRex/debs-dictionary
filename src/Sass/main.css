@@ -15,6 +15,9 @@ body {
 .quote-card .text-3 {
   text-transform: capitalize;
 }
+.quote-card span {
+  font-size: 20px;
+}
 
 @media (max-width: 576px) {
   .container {
