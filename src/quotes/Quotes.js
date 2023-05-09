@@ -15,8 +15,8 @@ export default function Quotes() {
         .catch(function (error) {
           console.log(error);
         });
-    }, 1000);
-  }, []);
+    }, 30000);
+  });
 
   return (
     <div className="quote-card">
