@@ -30,6 +30,12 @@ $grid-margin: 12px auto;
 body{
     background-color: $aux-color;
 }
+.quote-card{
+  .text-3{
+    
+    text-transform: capitalize;
+  }
+}
 
 @media (max-width: 576px) {
   .container {
@@ -86,17 +92,20 @@ body{
         background-color: $main-color;
         border-radius: 15px;
         padding: 20px;
+        .text-3 {
+          font: $font-normal;
+          margin-top: -1px;
+        }
         .quote-heading{
             font: $font-bold;
             font-size: 22px !important;
             color: $aux-color;
             letter-spacing: -1px;
-            margin-bottom: 5px;
+            margin-top: 17px;
         }
         .quote-content{
             font: $font-lighter;
             color: $aux-color;
-            margin-bottom: 5px;
         }
         .quote-by{
             font: $font-light;

@@ -8,6 +8,10 @@ body {
   background-color: #e8eaf5;
 }
 
+.quote-card .text-3 {
+  text-transform: capitalize;
+}
+
 @media (max-width: 576px) {
   .container {
     max-width: 100vw;
@@ -65,17 +69,20 @@ body {
     border-radius: 15px;
     padding: 20px;
   }
+  .container .quote-card .text-3 {
+    font: 100 35px "Poppins", sans-serif;
+    margin-top: -1px;
+  }
   .container .quote-card .quote-heading {
     font: 600 20px "Poppins", sans-serif;
     font-size: 22px !important;
     color: #e8eaf5;
     letter-spacing: -1px;
-    margin-bottom: 5px;
+    margin-top: 17px;
   }
   .container .quote-card .quote-content {
     font: 200 17px "Poppins", sans-serif;
     color: #e8eaf5;
-    margin-bottom: 5px;
   }
   .container .quote-card .quote-by {
     font: 400 20px "Poppins", sans-serif;
