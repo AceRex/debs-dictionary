@@ -1,3 +1,4 @@
+import React from 'react'
 import './Sass/main.css'
 import Quotes from './quotes/Quotes'
 
