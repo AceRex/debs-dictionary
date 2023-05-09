@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import './Sass/main.css'
+import Quotes from './quotes/Quotes'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className='text-3'>Welcome</div>
+      <div className='text-1'>What word do you want to search?</div>
+      <div className='search-input'>
+        <input/>
+        <button>Search</button>
+      </div>
+      <Quotes/>
+
     </div>
   );
 }
