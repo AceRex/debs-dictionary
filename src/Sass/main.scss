@@ -30,9 +30,11 @@ $grid-margin: 12px auto;
 body{
     background-color: $aux-color;
 }
+.search-input{
+  padding-left: 10px;
+}
 .quote-card{
-  .text-3{
-    
+  .text-3{    
     text-transform: capitalize;
   }
 }

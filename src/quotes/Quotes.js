@@ -17,13 +17,18 @@ export default function Quotes() {
           console.log(error);
         });
     }, 1000);
-  });
+  }, []);
 
   useEffect(() => {
     axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
     .then(
       function(response){
         setMeaning(response.data[0].meanings[0].definitions[0].definition)
+        if (response.data[0].length >= 2){
+          console.log('more than 2')
+        }
+        console.log(response.data)
+
       }
     )
     .catch(function(error){

@@ -8,6 +8,10 @@ body {
   background-color: #e8eaf5;
 }
 
+.search-input {
+  padding-left: 10px;
+}
+
 .quote-card .text-3 {
   text-transform: capitalize;
 }
