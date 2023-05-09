@@ -17,7 +17,7 @@ export default function Quotes() {
           console.log(error);
         });
     }, 1000);
-  }, []);
+  },[]);
 
   useEffect(() => {
     axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
