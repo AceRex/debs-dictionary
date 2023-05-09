@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 export default function Quotes() {
   const [word, setWord] = useState([]);
+  const [meaning, setMeaning] = useState([])
  
 
   useEffect(() => {
@@ -15,16 +16,30 @@ export default function Quotes() {
         .catch(function (error) {
           console.log(error);
         });
-    }, 30000);
-  });
+    }, 1000);
+  }, []);
+
+  useEffect(() => {
+    axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
+    .then(
+      function(response){
+        setMeaning(response.data[0].meanings[0].definitions[0].definition)
+      }
+    )
+    .catch(function(error){
+      console.log(error)
+      if(error){
+        setMeaning('')
+      }
+    })
+  })
 
   return (
     <div className="quote-card">
       <p className="quote-heading">Word for you</p>
       <p className="text-3">{word[0]} </p>
       <p className="quote-content">
-        One forgets words as one forgets names. One’s vocabulary needs constant
-        fertilizing or it will die.
+       {meaning}
       </p>
       <p className="quote-by">~ Evelyn Waugh</p>
     </div>
