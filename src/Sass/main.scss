@@ -27,17 +27,21 @@ $grid-margin: 12px auto;
   margin: 0;
   padding: 0;
 }
-body{
-    background-color: $aux-color;
+
+body {
+  background-color: $aux-color;
 }
-.search-input{
+
+.search-input {
   padding-left: 10px;
 }
-.quote-card{
-  .text-3{    
-    text-transform: capitalize;    
+
+.quote-card {
+  .text-3 {
+    text-transform: capitalize;
   }
-  span{
+
+  span {
     font-size: 20px;
   }
 }
@@ -48,6 +52,7 @@ body{
     min-height: 94vh;
     padding: 25px;
     background-color: $aux-color;
+
     .text-1 {
       font: $font-bolder;
       color: $main-color;
@@ -56,32 +61,37 @@ body{
       word-spacing: 3px;
       margin: $grid-margin;
     }
+
     .text-2 {
       font: $font-normal;
       color: $primary-color;
       margin: $grid-margin;
     }
+
     .text-3 {
       font: $font-normal;
       color: $primary-color;
       margin: $grid-margin;
     }
+
     .search-input {
       width: 100%;
       margin: 25px 0px;
       display: flex;
       border: solid 2px $secondary-color;
       border-radius: 15px;
+
       input {
         width: 80%;
         background-color: transparent;
         color: $primary-color;
         padding: 10px 0px;
         border: none;
-        border-radius: 10px 0px 0px 10px;   
-        outline: none;     
+        border-radius: 10px 0px 0px 10px;
+        outline: none;
         font-size: 20px;
       }
+
       button {
         width: 30%;
         background-color: $secondary-color;
@@ -91,339 +101,412 @@ body{
         font: 300 17px $font-stack;
       }
     }
-    .quote-card{
-        max-width: 100%;
-        margin: $grid-margin;
-        background-color: $main-color;
-        border-radius: 15px;
-        padding: 20px;
-        .text-3 {
-          font: $font-normal;
-          margin-top: -1px;
-        }
-        .quote-heading{
-            font: $font-bold;
-            font-size: 22px !important;
-            color: $aux-color;
-            letter-spacing: -1px;
-            margin-top: 17px;
-        }
-        .quote-content{
-            font: $font-lighter;
-            color: $aux-color;
-        }
-        .quote-by{
-            font: $font-light;
-            font-size: 13px !important;
-            color: $aux-color;
-        }
+
+    .quote-card {
+      max-width: 100%;
+      margin: $grid-margin;
+      background-color: $main-color;
+      background-image: url('./BgImg.png');
+      background-repeat: no-repeat;
+      background-position-x: 330px;
+      background-position-y: 100px;
+      background-size: contain;
+      border-radius: 15px;
+      padding: 20px;
+
+      .text-3 {
+        font: $font-normal;
+        margin-top: -1px;
+      }
+
+      .quote-heading {
+        font: $font-bold;
+        font-size: 22px !important;
+        color: $aux-color;
+        letter-spacing: -1px;
+        margin-top: 17px;
+      }
+
+      .quote-content {
+        font: $font-lighter;
+        color: $aux-color;
+      }
+
+      .quote-by {
+        font: $font-light;
+        font-size: 13px !important;
+        color: $aux-color;
+      }
     }
   }
 }
-@media (min-width: 577px) and (max-width: 768px) { 
-    .container {
-        max-width: 80vw;
-        margin: auto;
-        min-height: 94vh;
-        padding: 30px;
-        background-color: $aux-color;
-        .text-1 {
-          font: $font-bolder;
-          color: $main-color;
-          line-height: 40px;
-          letter-spacing: -2px;
-          word-spacing: 3px;
-        }
-        .text-2 {
-          font: $font-normal;
-          color: $primary-color;
-          margin: $grid-margin;
-        }
-        .text-3 {
-          font: $font-normal;
-          font-size: 45px !important;
-          color: $primary-color;
-          margin-bottom: 15px;
-        }
-        .search-input {
-          width: 100%;
-          margin: 35px 0px;
-          display: flex;
-          border: solid 2px $secondary-color;
-          border-radius: 15px;
-          input {
-            width: 80%;
-            background-color: transparent;
-            padding: 13px 0px;
-            border: none;
-            border-radius: 10px 0px 0px 10px;   
-            outline: none;     
-            font-size: 20px;
-            color: $primary-color;
 
-          }
-          button {
-            width: 30%;
-            background-color: $secondary-color;
-            border: none;
-            border-radius: 10px 10px 10px 10px;
-            color: $aux-color;
-            font: 300 17px $font-stack;
-          }
-        }
-        .quote-card{
-            max-width: 100%;
-            margin-top: 40px !important;
-            background-color: $main-color;
-            border-radius: 15px;
-            padding: 30px 20px;
-            .quote-heading{
-                font: $font-bold;
-                font-size: 22px !important;
-                color: $aux-color;
-                letter-spacing: -1px;
-                margin-bottom: 5px;
-            }
-            .quote-content{
-                font: $font-lighter;
-                color: $aux-color;
-                margin-bottom: 5px;
-            }
-            .quote-by{
-                font: $font-light;
-                font-size: 13px !important;
-                color: $aux-color;
-            }
-        }
-      }
- }
-@media (min-width: 769px) and (max-width: 992px) { 
-    .container {
-        max-width: 70vw;
-        margin: auto;
-        min-height: 94vh;
-        padding: 30px;
-        background-color: $aux-color;
-        .text-1 {
-          font: $font-bolder;
-          color: $main-color;
-          line-height: 40px;
-          letter-spacing: -2px;
-          word-spacing: 3px;
-        }
-        .text-2 {
-          font: $font-normal;
-          color: $primary-color;
-          margin: $grid-margin;
-        }
-        .text-3 {
-          font: $font-normal;
-          font-size: 45px !important;
-          color: $primary-color;
-          margin-bottom: 15px;
-        }
-        .search-input {
-          width: 100%;
-          margin: 35px 0px;
-          display: flex;
-          border: solid 2px $secondary-color;
-          border-radius: 15px;
-          color: $primary-color;
+@media (min-width: 577px) and (max-width: 768px) {
+  .container {
+    max-width: 80vw;
+    margin: auto;
+    min-height: 94vh;
+    padding: 30px;
+    background-color: $aux-color;
 
-          input {
-            width: 80%;
-            background-color: transparent;
-            padding: 13px 0px;
-            border: none;
-            border-radius: 10px 0px 0px 10px;   
-            outline: none;     
-            font-size: 20px;
-          }
-          button {
-            width: 30%;
-            background-color: $secondary-color;
-            border: none;
-            border-radius: 10px 10px 10px 10px;
-            color: $aux-color;
-            font: 300 17px $font-stack;
-          }
-        }
-        .quote-card{
-            max-width: 100%;
-            margin-top: 40px !important;
-            background-color: $main-color;
-            border-radius: 15px;
-            padding: 30px 20px;
-            .quote-heading{
-                font: $font-bold;
-                font-size: 22px !important;
-                color: $aux-color;
-                letter-spacing: -1px;
-                margin-bottom: 5px;
-            }
-            .quote-content{
-                font: $font-lighter;
-                color: $aux-color;
-                margin-bottom: 5px;
-            }
-            .quote-by{
-                font: $font-light;
-                font-size: 13px !important;
-                color: $aux-color;
-            }
-        }
-      }
- }
- @media (min-width: 993px) and (max-width: 1200px) { 
-    .container {
-        max-width: 50vw;
-        margin: auto;
-        min-height: 94vh;
-        padding: 30px;
-        background-color: $aux-color;
-        .text-1 {
-          font: $font-bolder;
-          color: $main-color;
-          line-height: 40px;
-          letter-spacing: -2px;
-          word-spacing: 3px;
-        }
-        .text-2 {
-          font: $font-normal;
-          color: $primary-color;
-          margin: $grid-margin;
-        }
-        .text-3 {
-          font: $font-normal;
-          font-size: 45px !important;
-          color: $primary-color;
-          margin-bottom: 15px;
-        }
-        .search-input {
-          width: 100%;
-          margin: 35px 0px;
-          display: flex;
-          border: solid 2px $secondary-color;
-          border-radius: 15px;
-          input {
-            width: 80%;
-            background-color: transparent;
-            padding: 13px 0px;
-            border: none;
-            border-radius: 10px 0px 0px 10px;   
-            outline: none;     
-            font-size: 20px;
-            color: $primary-color;
+    .text-1 {
+      font: $font-bolder;
+      color: $main-color;
+      line-height: 40px;
+      letter-spacing: -2px;
+      word-spacing: 3px;
+    }
 
-          }
-          button {
-            width: 30%;
-            background-color: $secondary-color;
-            border: none;
-            border-radius: 10px 10px 10px 10px;
-            color: $aux-color;
-            font: 300 17px $font-stack;
-          }
-        }
-        .quote-card{
-            max-width: 100%;
-            margin-top: 40px !important;
-            background-color: $main-color;
-            border-radius: 15px;
-            padding: 30px 20px;
-            .quote-heading{
-                font: $font-bold;
-                font-size: 22px !important;
-                color: $aux-color;
-                letter-spacing: -1px;
-                margin-bottom: 5px;
-            }
-            .quote-content{
-                font: $font-lighter;
-                color: $aux-color;
-                margin-bottom: 5px;
-            }
-            .quote-by{
-                font: $font-light;
-                font-size: 13px !important;
-                color: $aux-color;
-            }
-        }
+    .text-2 {
+      font: $font-normal;
+      color: $primary-color;
+      margin: $grid-margin;
+    }
+
+    .text-3 {
+      font: $font-normal;
+      font-size: 45px !important;
+      color: $primary-color;
+      margin-bottom: 15px;
+    }
+
+    .search-input {
+      width: 100%;
+      margin: 35px 0px;
+      display: flex;
+      border: solid 2px $secondary-color;
+      border-radius: 15px;
+
+      input {
+        width: 80%;
+        background-color: transparent;
+        padding: 13px 0px;
+        border: none;
+        border-radius: 10px 0px 0px 10px;
+        outline: none;
+        font-size: 20px;
+        color: $primary-color;
+
       }
- }
- @media (min-width: 1200px) { 
-    .container {
-        max-width: 50vw;
-        margin: auto;
-        min-height: 94vh;
-        padding: 30px;
-        background-color: $aux-color;
-        .text-1 {
-          font: $font-bolder;
-          color: $main-color;
-          line-height: 40px;
-          letter-spacing: -2px;
-          word-spacing: 3px;
-        }
-        .text-2 {
-          font: $font-normal;
-          color: $primary-color;
-          margin: $grid-margin;
-        }
-        .text-3 {
-          font: $font-normal;
-          font-size: 45px !important;
-          color: $primary-color;
-          margin-bottom: 15px;
-        }
-        .search-input {
-          width: 100%;
-          margin: 35px 0px;
-          display: flex;
-          border: solid 2px $secondary-color;
-          border-radius: 15px;
-          input {
-            width: 80%;
-            background-color: transparent;
-            padding: 13px 0px;
-            border: none;
-            border-radius: 10px 0px 0px 10px;   
-            outline: none;     
-            font-size: 20px;
-            color: $primary-color;
-          }
-          button {
-            width: 30%;
-            background-color: $secondary-color;
-            border: none;
-            border-radius: 10px 10px 10px 10px;
-            color: $aux-color;
-            font: 300 17px $font-stack;
-          }
-        }
-        .quote-card{
-            max-width: 100%;
-            margin-top: 40px !important;
-            background-color: $main-color;
-            border-radius: 15px;
-            padding: 30px 20px;
-            .quote-heading{
-                font: $font-bold;
-                font-size: 22px !important;
-                color: $aux-color;
-                letter-spacing: -1px;
-                margin-bottom: 5px;
-            }
-            .quote-content{
-                font: $font-lighter;
-                color: $aux-color;
-                margin-bottom: 5px;
-            }
-            .quote-by{
-                font: $font-light;
-                font-size: 13px !important;
-                color: $aux-color;
-            }
-        }
+
+      button {
+        width: 30%;
+        background-color: $secondary-color;
+        border: none;
+        border-radius: 10px 10px 10px 10px;
+        color: $aux-color;
+        font: 300 17px $font-stack;
       }
- }
+    }
+
+    .quote-card {
+      max-width: 100%;
+      margin-top: 40px !important;
+      background-color: $main-color;
+      background-image: url('./BgImg.png');
+      background-repeat: no-repeat;
+      background-position-x: 480px;
+      background-position-y: 120px;
+      background-size: contain;
+      border-radius: 15px;
+      padding: 30px 20px;
+
+      .quote-heading {
+        font: $font-bold;
+        font-size: 22px !important;
+        color: $aux-color;
+        letter-spacing: -1px;
+        margin-bottom: 5px;
+      }
+
+      .quote-content {
+        font: $font-lighter;
+        color: $aux-color;
+        margin-bottom: 5px;
+      }
+
+      .quote-by {
+        font: $font-light;
+        font-size: 13px !important;
+        color: $aux-color;
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .container {
+    max-width: 70vw;
+    margin: auto;
+    min-height: 94vh;
+    padding: 30px;
+    background-color: $aux-color;
+
+    .text-1 {
+      font: $font-bolder;
+      color: $main-color;
+      line-height: 40px;
+      letter-spacing: -2px;
+      word-spacing: 3px;
+    }
+
+    .text-2 {
+      font: $font-normal;
+      color: $primary-color;
+      margin: $grid-margin;
+    }
+
+    .text-3 {
+      font: $font-normal;
+      font-size: 45px !important;
+      color: $primary-color;
+      margin-bottom: 15px;
+    }
+
+    .search-input {
+      width: 100%;
+      margin: 35px 0px;
+      display: flex;
+      border: solid 2px $secondary-color;
+      border-radius: 15px;
+      color: $primary-color;
+
+      input {
+        width: 80%;
+        background-color: transparent;
+        padding: 13px 0px;
+        border: none;
+        border-radius: 10px 0px 0px 10px;
+        outline: none;
+        font-size: 20px;
+      }
+
+      button {
+        width: 30%;
+        background-color: $secondary-color;
+        border: none;
+        border-radius: 10px 10px 10px 10px;
+        color: $aux-color;
+        font: 300 17px $font-stack;
+      }
+    }
+
+    .quote-card {
+      max-width: 100%;
+      margin-top: 40px !important;
+      background-color: $main-color;
+      background-image: url('./BgImg.png');
+      background-repeat: no-repeat;
+      background-position-x: 500px;
+      background-position-y: 90px;
+      background-size: contain;
+      border-radius: 15px;
+      padding: 30px 20px;
+
+      .quote-heading {
+        font: $font-bold;
+        font-size: 22px !important;
+        color: $aux-color;
+        letter-spacing: -1px;
+        margin-bottom: 5px;
+      }
+
+      .quote-content {
+        font: $font-lighter;
+        color: $aux-color;
+        margin-bottom: 5px;
+      }
+
+      .quote-by {
+        font: $font-light;
+        font-size: 13px !important;
+        color: $aux-color;
+      }
+    }
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .container {
+    max-width: 50vw;
+    margin: auto;
+    min-height: 94vh;
+    padding: 30px;
+    background-color: $aux-color;
+
+    .text-1 {
+      font: $font-bolder;
+      color: $main-color;
+      line-height: 40px;
+      letter-spacing: -2px;
+      word-spacing: 3px;
+    }
+
+    .text-2 {
+      font: $font-normal;
+      color: $primary-color;
+      margin: $grid-margin;
+    }
+
+    .text-3 {
+      font: $font-normal;
+      font-size: 45px !important;
+      color: $primary-color;
+      margin-bottom: 15px;
+    }
+
+    .search-input {
+      width: 100%;
+      margin: 35px 0px;
+      display: flex;
+      border: solid 2px $secondary-color;
+      border-radius: 15px;
+
+      input {
+        width: 80%;
+        background-color: transparent;
+        padding: 13px 0px;
+        border: none;
+        border-radius: 10px 0px 0px 10px;
+        outline: none;
+        font-size: 20px;
+        color: $primary-color;
+
+      }
+
+      button {
+        width: 30%;
+        background-color: $secondary-color;
+        border: none;
+        border-radius: 10px 10px 10px 10px;
+        color: $aux-color;
+        font: 300 17px $font-stack;
+      }
+    }
+
+    .quote-card {
+      max-width: 100%;
+      margin-top: 40px !important;
+      background-color: $main-color;
+      background-image: url('./BgImg.png');
+      background-repeat: no-repeat;
+      background-position-x: 380px;
+      background-position-y: 120px;
+      background-size: contain;
+      border-radius: 15px;
+      padding: 30px 20px;
+
+      .quote-heading {
+        font: $font-bold;
+        font-size: 22px !important;
+        color: $aux-color;
+        letter-spacing: -1px;
+        margin-bottom: 5px;
+      }
+
+      .quote-content {
+        font: $font-lighter;
+        color: $aux-color;
+        margin-bottom: 5px;
+      }
+
+      .quote-by {
+        font: $font-light;
+        font-size: 13px !important;
+        color: $aux-color;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 50vw;
+    margin: auto;
+    min-height: 94vh;
+    padding: 30px;
+    background-color: $aux-color;
+
+    .text-1 {
+      font: $font-bolder;
+      color: $main-color;
+      line-height: 40px;
+      letter-spacing: -2px;
+      word-spacing: 3px;
+    }
+
+    .text-2 {
+      font: $font-normal;
+      color: $primary-color;
+      margin: $grid-margin;
+    }
+
+    .text-3 {
+      font: $font-normal;
+      font-size: 45px !important;
+      color: $primary-color;
+      margin-bottom: 15px;
+    }
+
+    .search-input {
+      width: 100%;
+      margin: 35px 0px;
+      display: flex;
+      border: solid 2px $secondary-color;
+      border-radius: 15px;
+
+      input {
+        width: 80%;
+        background-color: transparent;
+        padding: 13px 0px;
+        border: none;
+        border-radius: 10px 0px 0px 10px;
+        outline: none;
+        font-size: 20px;
+        color: $primary-color;
+      }
+
+      button {
+        width: 30%;
+        background-color: $secondary-color;
+        border: none;
+        border-radius: 10px 10px 10px 10px;
+        color: $aux-color;
+        font: 300 17px $font-stack;
+      }
+    }
+
+    .quote-card {
+      max-width: 100%;
+      margin-top: 40px !important;
+      background-color: $main-color;
+      background-image: url('./BgImg.png');
+      background-repeat: no-repeat;
+      background-position-x: 600px;
+      background-position-y: 90px;
+      background-size: contain;
+      border-radius: 15px;
+      padding: 30px 20px;
+
+      .quote-heading {
+        font: $font-bold;
+        font-size: 22px !important;
+        color: $aux-color;
+        letter-spacing: -1px;
+        margin-bottom: 5px;
+      }
+
+      .quote-content {
+        font: $font-lighter;
+        color: $aux-color;
+        margin-bottom: 5px;
+      }
+
+      .quote-by {
+        font: $font-light;
+        font-size: 13px !important;
+        color: $aux-color;
+      }
+    }
+  }
+}

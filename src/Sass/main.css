@@ -73,6 +73,11 @@ body {
     max-width: 100%;
     margin: 12px auto;
     background-color: #4460dd;
+    background-image: url("./BgImg.png");
+    background-repeat: no-repeat;
+    background-position-x: 330px;
+    background-position-y: 100px;
+    background-size: contain;
     border-radius: 15px;
     padding: 20px;
   }
@@ -152,6 +157,11 @@ body {
     max-width: 100%;
     margin-top: 40px !important;
     background-color: #4460dd;
+    background-image: url("./BgImg.png");
+    background-repeat: no-repeat;
+    background-position-x: 480px;
+    background-position-y: 120px;
+    background-size: contain;
     border-radius: 15px;
     padding: 30px 20px;
   }
@@ -228,6 +238,11 @@ body {
     max-width: 100%;
     margin-top: 40px !important;
     background-color: #4460dd;
+    background-image: url("./BgImg.png");
+    background-repeat: no-repeat;
+    background-position-x: 500px;
+    background-position-y: 90px;
+    background-size: contain;
     border-radius: 15px;
     padding: 30px 20px;
   }
@@ -304,6 +319,11 @@ body {
     max-width: 100%;
     margin-top: 40px !important;
     background-color: #4460dd;
+    background-image: url("./BgImg.png");
+    background-repeat: no-repeat;
+    background-position-x: 380px;
+    background-position-y: 120px;
+    background-size: contain;
     border-radius: 15px;
     padding: 30px 20px;
   }
@@ -380,6 +400,11 @@ body {
     max-width: 100%;
     margin-top: 40px !important;
     background-color: #4460dd;
+    background-image: url("./BgImg.png");
+    background-repeat: no-repeat;
+    background-position-x: 600px;
+    background-position-y: 90px;
+    background-size: contain;
     border-radius: 15px;
     padding: 30px 20px;
   }

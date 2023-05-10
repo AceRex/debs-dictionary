@@ -26,7 +26,11 @@ export default function Quotes() {
     .then(
       function(response){
         setMeaning(response.data[0].meanings[0].definitions[0].definition)
-        setPhonetics(response.data[0].phonetic)
+        if (response.data[0].phonetic === undefined){
+          setPhonetics('')
+        } else {
+          setPhonetics(response.data[0].phonetic)
+        }
         console.log(response.data)
 
       }
@@ -46,7 +50,7 @@ export default function Quotes() {
       <p className="quote-content">
        {meaning} 
       </p>
-      <p className="quote-by">~ Evelyn Waugh</p>
+      <p className="quote-by">...see more</p>
     </div>
   );
 }
