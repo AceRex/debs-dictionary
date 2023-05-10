@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 export default function Quotes() {
-  const [word, setWord] = useState([]);
+  const [searchWord, setSearchWord] = useState([]);
   const [meaning, setMeaning] = useState([]);
   const [phonetics, setPhonetics] = useState([])
 
@@ -13,7 +13,7 @@ export default function Quotes() {
       axios
         .get("https://random-word-api.herokuapp.com/word")
         .then(function (response) {
-          setWord(response.data);
+          setSearchWord(response.data);
         })
         .catch(function (error) {
           console.log(error);
@@ -22,7 +22,7 @@ export default function Quotes() {
   }, []);
 
   useEffect(() => {
-    axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
+    axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${searchWord}`)
     .then(
       function(response){
         setMeaning(response.data[0].meanings[0].definitions[0].definition)
@@ -46,7 +46,7 @@ export default function Quotes() {
   return (
     <div className="quote-card">
       <p className="quote-heading">Word for you</p>
-      <p className="text-3">{word[0]} <span>{phonetics}</span> </p>
+      <p className="text-3">{searchWord[0]} <span>{phonetics}</span> </p>
       <p className="quote-content">
        {meaning} 
       </p>
