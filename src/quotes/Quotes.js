@@ -6,8 +6,6 @@ export default function Quotes() {
   const [meaning, setMeaning] = useState([]);
   const [phonetics, setPhonetics] = useState([])
 
- 
-
   useEffect(() => {
     setTimeout(() => {
       axios
@@ -31,7 +29,6 @@ export default function Quotes() {
         } else {
           setPhonetics(response.data[0].phonetic)
         }
-        console.log(response.data)
 
       }
     )
