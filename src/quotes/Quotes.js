@@ -50,7 +50,6 @@ export default function Quotes() {
       <p className="quote-content">
        {meaning} 
       </p>
-      <p className="quote-by">...see more</p>
     </div>
   );
 }

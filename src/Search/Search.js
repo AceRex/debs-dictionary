@@ -13,7 +13,7 @@ export default function SearchPage() {
           <div className="phonetic">{phonetic}</div>
         ))}
       </div>
-      {value.map(({ word, meanings, phonetics }) => {
+      {value.map(({ word, meanings }) => {
         return (
           <div key={word}>
             <div className="meanings">
