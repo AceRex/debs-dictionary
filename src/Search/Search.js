@@ -9,42 +9,51 @@ export default function SearchPage() {
       <div className="text-3">Debs Dictionary</div>
       <div className="heading">
         <h1>{searchedWord}</h1>
-        {value.map(({phonetic}) => (
-             <div className="phonetic">{phonetic}</div>
+        {value.map(({ phonetic }) => (
+          <div className="phonetic">{phonetic}</div>
         ))}
       </div>
       {value.map(({ word, meanings, phonetics }) => {
         return (
-          <div key={word}>           
-            {/* <ul className="phonetics">
-              {phonetics.map(({ text, audio }) => (
-                <li>{text} </li>
-              ))}
-            </ul> */}
+          <div key={word}>
             <div className="meanings">
-            {meanings.map(
-              ({ partOfSpeech, definitions, synonyms, antonyms }) => {
-                return (
-                  <div key={partOfSpeech} className="meaning-card">
-                    <p>{partOfSpeech}</p>
-                    {definitions.map(
-                      ({ definition, example, antonyms, synonyms }) => (
-                        <div key={definition}>
-                          {definition}
-                          {example}
-                          {antonyms}
-                          {synonyms}
-                        </div>
-                      )
-                    )}
-                    {synonyms.map((synonym) => synonym)}
-                    {antonyms.map((antonym) => antonym)}
-                  </div>
-                );
-              }
-            )}
+              {meanings.map(
+                ({ partOfSpeech, definitions, synonyms, antonyms }) => {
+                  return (
+                    <div key={partOfSpeech} className="meaning-card">
+                      <p>{partOfSpeech}</p>
+                      {definitions.map(
+                        ({ definition, example, antonyms, synonyms }) => (
+                          <div key={definition}>
+                            {definition ? (
+                              <div className="definition">
+                                <p>Definition</p>
+                                {definition}
+                              </div>
+                            ) : (
+                              ""
+                            )}
+                            {example ? (
+                              <div className="example">
+                                <p>Example</p>
+                                {example}
+                              </div>
+                            ) : (
+                              ""
+                            )}
+
+                            {antonyms}
+                            {synonyms}
+                          </div>
+                        )
+                      )}
+                      {synonyms.map((synonym) => synonym)}
+                      {antonyms.map((antonym) => antonym)}
+                    </div>
+                  );
+                }
+              )}
             </div>
-            
           </div>
         );
       })}
