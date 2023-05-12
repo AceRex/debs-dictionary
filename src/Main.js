@@ -1,6 +1,6 @@
 import "./Sass/main.css";
 import Quotes from "./quotes/Quotes";
-import { useContext, useState } from "react";
+import { useContext} from "react";
 import { WordContext } from "./UseContext";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -21,10 +21,6 @@ function Main() {
     navigate("/search");
   };
 
-  const handlechange = (e) => {
-    setSearchedWord(e.target.value);
-    console.log(e.tagret.value);
-  };
   return (
     <div className="container">
       <div className="text-3">Debs Dictionary</div>

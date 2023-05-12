@@ -1,6 +1,7 @@
 import { useState, useMemo } from "react";
 import { WordContext } from "./UseContext";
 import AllRoutes from "./Routes";
+import Footer from './Footer'
 
 function App() {
   const [value, setValue] = useState([]);
@@ -13,6 +14,7 @@ function App() {
   return (
     <WordContext.Provider value={ProviderValue}>
       <AllRoutes />
+      <Footer />
     </WordContext.Provider>
   );
 }
