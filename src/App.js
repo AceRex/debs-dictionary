@@ -1,17 +1,14 @@
-import "./Sass/main.css";
-import Quotes from "./quotes/Quotes";
+import { useState, useMemo } from "react";
+import { WordContext } from "./UseContext";
+import AllRoutes from "./Routes";
 
 function App() {
+  const [value, setValue] = useState("");
+  const ProviderValue = useMemo(() => ({ value, setValue }), [value, setValue]);
   return (
-    <div className="container">
-      <div className="text-3">Debs Dictionary</div>
-      <div className="text-1">What word do you want to search?</div>
-      <div className="search-input">
-        <input />
-        <button>Search</button>
-      </div>
-      <Quotes />
-    </div>
+    <WordContext.Provider value={ProviderValue}>
+      <AllRoutes />
+    </WordContext.Provider>
   );
 }
 
