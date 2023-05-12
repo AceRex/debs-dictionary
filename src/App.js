@@ -3,8 +3,13 @@ import { WordContext } from "./UseContext";
 import AllRoutes from "./Routes";
 
 function App() {
-  const [value, setValue] = useState("");
-  const ProviderValue = useMemo(() => ({ value, setValue }), [value, setValue]);
+  const [value, setValue] = useState([]);
+  const [searchedWord, setSearchedWord] = useState("");
+
+  const ProviderValue = useMemo(
+    () => ({ value, setValue, searchedWord, setSearchedWord }),
+    [value, setValue, searchedWord, setSearchedWord]
+  );
   return (
     <WordContext.Provider value={ProviderValue}>
       <AllRoutes />

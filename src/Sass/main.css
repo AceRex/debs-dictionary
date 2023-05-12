@@ -12,6 +12,10 @@ body {
   padding-left: 10px;
 }
 
+.text-1 {
+  text-transform: capitalize;
+}
+
 .quote-card .text-3 {
   text-transform: capitalize;
 }
