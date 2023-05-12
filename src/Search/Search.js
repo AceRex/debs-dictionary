@@ -10,7 +10,7 @@ export default function SearchPage() {
       <div className="heading">
         <h1>{searchedWord}</h1>
         {value.map(({ phonetic }) => (
-          <div className="phonetic">{phonetic}</div>
+          <div className={phonetic ? "phonetic" : 'display-none' }>{phonetic}</div>
         ))}
       </div>
       {value.map(({ word, meanings }) => {

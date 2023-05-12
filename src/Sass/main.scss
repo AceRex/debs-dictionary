@@ -50,6 +50,9 @@ body {
   font: $font-light;
   font-size: 15px;
 }
+.display-none{
+  display: none;
+}
 @media (max-width: 576px) {
   .container {
     max-width: 100vw;
