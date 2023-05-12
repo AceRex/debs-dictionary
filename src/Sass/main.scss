@@ -303,7 +303,7 @@ body {
       box-shadow: 0px 10px 10px -5px #4460dd3d;
 
       .meaning-card {
-        min-width: 80%;
+        min-width: 85%;
         background-color: $light-color;
         margin-right: 15px;
         padding: 15px;
@@ -444,11 +444,105 @@ body {
 
 @media (min-width: 769px) and (max-width: 992px) {
   .container {
-    max-width: 70vw;
+    max-width: 80vw;
     margin: auto;
     min-height: 94vh;
     padding: 30px;
     background-color: $aux-color;
+
+    .heading {
+      background-color: $light-color;
+      padding: 15px 0px;
+      text-align: center;
+      border-radius: $border-radius-sm;
+      box-shadow: 0px 10px 10px -5px #4460dd3d;
+
+      h1 {
+        font: $font-bolder;
+        font-size: 40px;
+        color: $main-color;
+        line-height: 40px;
+        letter-spacing: -2px;
+        word-spacing: 3px;
+        margin: $grid-margin;
+        text-transform: capitalize;
+      }
+    }
+
+    .phonetic {
+      font: $font-lighter;
+      font-size: 25px !important;
+      color: $main-color;
+      background-color: $secondary-color;
+      color: $aux-color;
+      padding: 5px;
+      margin: auto;
+      width: 60%;
+      border-radius: $border-radius;
+    }
+
+    .meanings {
+      padding: 25px 0;
+      display: flex;
+      font: $font-lighter;
+      overflow-x: scroll;
+      overscroll-behavior: contain;
+      box-shadow: 0px 10px 10px -5px #4460dd3d;
+
+      .meaning-card {
+        min-width: 75%;
+        background-color: $light-color;
+        margin-right: 15px;
+        padding: 15px;
+        border-radius: $border-radius-sm;
+
+        p {
+          font: $font-bolder;
+          font-size: 30px;
+          text-transform: capitalize;
+          color: $main-color;
+        }
+
+        .definition {
+          margin: 15px 0px;
+
+          p {
+            font: $font-bold;
+            font-size: 15px;
+          }
+        }
+
+        .example {
+          background-color: $main-color;
+          margin: 15px 0px;
+          padding: 10px;
+          color: $light-color;
+          border-radius: $border-radius-sm;
+
+          p {
+            font: $font-bold;
+            font-size: 15px;
+            color: $secondary-color;
+
+          }
+        }
+
+      }
+    }
+
+    .meanings::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    .meanings::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey;
+      border-radius: 5px;
+    }
+
+    .meanings::-webkit-scrollbar-thumb {
+      background: #4460dd;
+      border-radius: 5px;
+    }
 
     .text-1 {
       font: $font-bolder;
@@ -536,11 +630,105 @@ body {
 
 @media (min-width: 993px) and (max-width: 1200px) {
   .container {
-    max-width: 50vw;
+    max-width: 70vw;
     margin: auto;
     min-height: 94vh;
     padding: 30px;
     background-color: $aux-color;
+
+    .heading {
+      background-color: $light-color;
+      padding: 15px 0px;
+      text-align: center;
+      border-radius: $border-radius-sm;
+      box-shadow: 0px 10px 10px -5px #4460dd3d;
+
+      h1 {
+        font: $font-bolder;
+        font-size: 40px;
+        color: $main-color;
+        line-height: 40px;
+        letter-spacing: -2px;
+        word-spacing: 3px;
+        margin: $grid-margin;
+        text-transform: capitalize;
+      }
+    }
+
+    .phonetic {
+      font: $font-lighter;
+      font-size: 25px !important;
+      color: $main-color;
+      background-color: $secondary-color;
+      color: $aux-color;
+      padding: 5px;
+      margin: auto;
+      width: 60%;
+      border-radius: $border-radius;
+    }
+
+    .meanings {
+      padding: 25px 0;
+      display: flex;
+      font: $font-lighter;
+      overflow-x: scroll;
+      overscroll-behavior: contain;
+      box-shadow: 0px 10px 10px -5px #4460dd3d;
+
+      .meaning-card {
+        min-width: 60%;
+        background-color: $light-color;
+        margin-right: 15px;
+        padding: 15px;
+        border-radius: $border-radius-sm;
+
+        p {
+          font: $font-bolder;
+          font-size: 30px;
+          text-transform: capitalize;
+          color: $main-color;
+        }
+
+        .definition {
+          margin: 15px 0px;
+
+          p {
+            font: $font-bold;
+            font-size: 15px;
+          }
+        }
+
+        .example {
+          background-color: $main-color;
+          margin: 15px 0px;
+          padding: 10px;
+          color: $light-color;
+          border-radius: $border-radius-sm;
+
+          p {
+            font: $font-bold;
+            font-size: 15px;
+            color: $secondary-color;
+
+          }
+        }
+
+      }
+    }
+
+    .meanings::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    .meanings::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey;
+      border-radius: 5px;
+    }
+
+    .meanings::-webkit-scrollbar-thumb {
+      background: #4460dd;
+      border-radius: 5px;
+    }
 
     .text-1 {
       font: $font-bolder;
@@ -629,11 +817,105 @@ body {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 50vw;
+    max-width: 70vw;
     margin: auto;
     min-height: 94vh;
     padding: 30px;
     background-color: $aux-color;
+
+    .heading {
+      background-color: $light-color;
+      padding: 15px 0px;
+      text-align: center;
+      border-radius: $border-radius-sm;
+      box-shadow: 0px 10px 10px -5px #4460dd3d;
+
+      h1 {
+        font: $font-bolder;
+        font-size: 40px;
+        color: $main-color;
+        line-height: 40px;
+        letter-spacing: -2px;
+        word-spacing: 3px;
+        margin: $grid-margin;
+        text-transform: capitalize;
+      }
+    }
+
+    .phonetic {
+      font: $font-lighter;
+      font-size: 25px !important;
+      color: $main-color;
+      background-color: $secondary-color;
+      color: $aux-color;
+      padding: 5px;
+      margin: auto;
+      width: 40%;
+      border-radius: $border-radius;
+    }
+
+    .meanings {
+      padding: 25px 0;
+      display: flex;
+      font: $font-lighter;
+      overflow-x: scroll;
+      overscroll-behavior: contain;
+      box-shadow: 0px 10px 10px -5px #4460dd3d;
+
+      .meaning-card {
+        min-width: 35%;
+        background-color: $light-color;
+        margin-right: 15px;
+        padding: 15px;
+        border-radius: $border-radius-sm;
+
+        p {
+          font: $font-bolder;
+          font-size: 30px;
+          text-transform: capitalize;
+          color: $main-color;
+        }
+
+        .definition {
+          margin: 15px 0px;
+
+          p {
+            font: $font-bold;
+            font-size: 15px;
+          }
+        }
+
+        .example {
+          background-color: $main-color;
+          margin: 15px 0px;
+          padding: 10px;
+          color: $light-color;
+          border-radius: $border-radius-sm;
+
+          p {
+            font: $font-bold;
+            font-size: 15px;
+            color: $secondary-color;
+
+          }
+        }
+
+      }
+    }
+
+    .meanings::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    .meanings::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey;
+      border-radius: 5px;
+    }
+
+    .meanings::-webkit-scrollbar-thumb {
+      background: #4460dd;
+      border-radius: 5px;
+    }
 
     .text-1 {
       font: $font-bolder;
