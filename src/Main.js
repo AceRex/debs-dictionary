@@ -8,7 +8,6 @@ import axios from "axios";
 function Main() {
   const { setValue, searchedWord, setSearchedWord } = useContext(WordContext);
   let navigate = useNavigate();
-  // "gourmandise"
   const handleClick = () => {
     axios
       .get(`https://api.dictionaryapi.dev/api/v2/entries/en/${searchedWord}`)
