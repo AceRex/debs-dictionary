@@ -136,6 +136,25 @@ body {
 
           }
         }
+        .synonym {
+          background-color: $secondary-color;
+          margin: 15px 0px;
+          padding: 10px;
+          color: $light-color;
+          border-radius: $border-radius-sm;
+
+          p {
+            font: $font-bold;
+            font-size: 15px;
+            color: $main-color;
+
+          }
+          .synonyms{
+            display: flex;
+            flex-wrap: wrap;
+            word-spacing:10px ;
+          }
+        }
 
       }
     }
@@ -241,25 +260,7 @@ body {
     }
 
 
-    .phonetics {
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-      list-style-type: none;
-
-      li {
-        width: 100px;
-        margin: 10px 10px 10px 0px;
-        background-color: $light-color;
-        padding: 10px;
-        border-radius: 10px;
-        font: $font-lighter;
-        text-align: center;
-        font-size: 17px !important;
-        // p {}
-      }
-
-    }
+    
   }
 }
 

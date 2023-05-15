@@ -10,7 +10,9 @@ export default function SearchPage() {
       <div className="heading">
         <h1>{searchedWord}</h1>
         {value.map(({ phonetic }) => (
-          <div className={phonetic ? "phonetic" : 'display-none' }>{phonetic}</div>
+          <div className={phonetic ? "phonetic" : "display-none"}>
+            {phonetic}
+          </div>
         ))}
       </div>
       {value.map(({ word, meanings }) => {
@@ -47,7 +49,23 @@ export default function SearchPage() {
                           </div>
                         )
                       )}
-                      {synonyms.map((synonym) => synonym)}
+                      <div className="synonym">
+                        <p>Synonym</p>
+                        <div className="synonyms">
+                        {synonyms.map((synonym) => (
+                          <div key={synonym}>
+                            {synonym ? (
+                              <span>
+                                {synonym}
+                                {","}
+                              </span>
+                            ) : (
+                              ""
+                            )}
+                          </div>
+                        ))}
+                        </div>
+                      </div>
                       {antonyms.map((antonym) => antonym)}
                     </div>
                   );

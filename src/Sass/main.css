@@ -109,6 +109,23 @@ body {
     font-size: 15px;
     color: #56cee9;
   }
+  .container .meanings .meaning-card .synonym {
+    background-color: #56cee9;
+    margin: 15px 0px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+  }
+  .container .meanings .meaning-card .synonym p {
+    font: 600 20px "Poppins", sans-serif;
+    font-size: 15px;
+    color: #4460dd;
+  }
+  .container .meanings .meaning-card .synonym .synonyms {
+    display: flex;
+    flex-wrap: wrap;
+    word-spacing: 10px;
+  }
   .container .meanings::-webkit-scrollbar {
     width: 10px;
   }
@@ -194,22 +211,6 @@ body {
     font: 400 20px "Poppins", sans-serif;
     font-size: 13px !important;
     color: #e8eaf5;
-  }
-  .container .phonetics {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    list-style-type: none;
-  }
-  .container .phonetics li {
-    width: 100px;
-    margin: 10px 10px 10px 0px;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 10px;
-    font: 200 17px "Poppins", sans-serif;
-    text-align: center;
-    font-size: 17px !important;
   }
 }
 @media (min-width: 577px) and (max-width: 768px) {
